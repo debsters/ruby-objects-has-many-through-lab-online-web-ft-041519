@@ -1,7 +1,7 @@
 class Genre
   attr_accessor :name
   @@all = []
-  
+
   def initialize(name)
     @name = name
     @@all << self
@@ -17,6 +17,6 @@ class Genre
 
   def artists
     songs.map {|s| s.artist}
-    
+
   end
 end
